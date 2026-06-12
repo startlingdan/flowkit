@@ -30,6 +30,21 @@ shows every shape, colour class and edge style on one canvas.
 
 ## Quick start
 
+Node 18+ and a clone is all SVG output needs — the renderer has zero runtime
+dependencies:
+
+```bash
+git clone https://github.com/startlingdan/flowkit.git
+cd flowkit
+node bin/flowkit.mjs render samples/01-decision.json --svg-only --out-dir out
+# → out/01-decision.svg — open it in any browser
+```
+
+PNG output drives headless chromium through puppeteer. `npm install` pulls it
+(a dev dependency); an install in any parent `node_modules` is picked up too,
+and a system chromium is used when one exists (`FLOWKIT_CHROMIUM` overrides
+the path). Then drop `--svg-only`:
+
 ```bash
 node bin/flowkit.mjs render chart.json                 # writes chart.svg + chart.png next to it
 node bin/flowkit.mjs render charts/*.json --out-dir out
@@ -38,10 +53,49 @@ node bin/flowkit.mjs transpose chart.json -o tb.json   # flip horizontal <-> ver
 # options: --svg-only   --theme dark|light   --scale N (png pixel density, default 2)
 ```
 
-PNG rasterisation drives headless chromium through puppeteer: `npm install`
-pulls it (dev dependency), an install in any parent `node_modules` is picked
-up too, and a system chromium is used when one exists (`FLOWKIT_CHROMIUM`
-overrides the path). SVG output needs no browser at all.
+## Your first chart
+
+Save this as `hello.json` — every node names its own grid cell (`col`, `row`):
+
+```json
+{
+  "title": "Hello flowkit",
+  "nodes": [
+    { "id": "start", "col": 0, "row": 0, "shape": "terminal", "class": "primary", "label": "Start" },
+    { "id": "work", "col": 1, "row": 0, "label": "Do the thing" },
+    { "id": "ok", "col": 2, "row": 0, "shape": "decision", "label": "Worked?" },
+    { "id": "done", "col": 3, "row": 0, "shape": "terminal", "class": "success", "label": "Done" },
+    { "id": "retry", "col": 2, "row": 1, "class": "warning", "label": "Fix and retry" }
+  ],
+  "edges": [
+    { "from": "start", "to": "work" },
+    { "from": "work", "to": "ok" },
+    { "from": "ok", "to": "done", "label": "yes" },
+    { "from": "ok", "to": "retry", "label": "no" },
+    { "from": "retry", "to": "work", "style": "dashed", "label": "fixed" }
+  ]
+}
+```
+
+```bash
+node bin/flowkit.mjs render hello.json --svg-only
+```
+
+![Hello flowkit](docs/00-hello.svg)
+
+Three things just happened that define the tool:
+
+- **You placed every node.** `col`/`row` are yours; there is no layout engine
+  to fight.
+- **The edges routed themselves** through the gaps between cells, following
+  the fixed rules below — including the dashed loop-back finding its own way
+  back around the decision.
+- **Feedback is numeric.** Don't like a route or a colour? Change a number or
+  an enum (`exit`, `enter`, `via`, `class` — see the
+  [feedback vocabulary](REFERENCE.md#changing-a-chart-the-feedback-vocabulary))
+  and re-render. Identical JSON gives identical pixels, every time.
+
+(This chart ships as `samples/00-hello.json`.)
 
 ## Chart format
 
@@ -129,7 +183,7 @@ Because of 1–6, *where a line goes is a pure function of the JSON*. If a line
 looks wrong, change the JSON; the renderer will never re-arrange anything by
 itself.
 
-## Authoring guide (for AI sessions)
+## Authoring guide (for humans and AI sessions)
 
 - Sketch the grid first: main flow left→right along row 0, branches/failure
   paths on rows below, merges back via explicit `enter` sides.
@@ -153,6 +207,7 @@ itself.
 
 | file | exercises |
 |---|---|
+| `samples/00-hello.json` | the five-node starter from "Your first chart" |
 | `samples/01-decision.json` | decisions, yes/no labels, loop-backs, retry cycles, all shapes |
 | `samples/02-pipeline.json` | DAG fan-in/fan-out, per-type colour classes, legend |
 | `samples/03-swimlanes.json` | row swimlanes, light theme, cross-lane edges |

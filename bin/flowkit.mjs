@@ -131,7 +131,11 @@ for (const file of files) {
 }
 
 if (jobs.length) {
-  await rasterise(jobs, { scale: opts.scale });
+  try {
+    await rasterise(jobs, { scale: opts.scale });
+  } catch (err) {
+    fail(`✗ ${err.message}`);
+  }
   for (const j of jobs) console.log(`✓ ${j.out} (@${opts.scale}x)`);
 }
 if (hadErrors) process.exit(1);

@@ -8,7 +8,16 @@ export async function rasterise(jobs, { scale = 2 } = {}) {
   // resolves from this file upward, so a shared install in a parent
   // node_modules works as well as a local `npm i -D puppeteer`
   const require = createRequire(import.meta.url);
-  const puppeteer = require('puppeteer');
+  let puppeteer;
+  try {
+    puppeteer = require('puppeteer');
+  } catch (err) {
+    if (err.code !== 'MODULE_NOT_FOUND') throw err;
+    throw new Error(
+      'PNG output needs puppeteer, which is not installed. ' +
+      'Run `npm install` (it is a dev dependency), or render with --svg-only.',
+    );
+  }
   const executablePath = process.env.FLOWKIT_CHROMIUM
     ?? ['/usr/bin/chromium', '/usr/bin/chromium-browser', '/usr/bin/google-chrome']
       .find(p => fs.existsSync(p));

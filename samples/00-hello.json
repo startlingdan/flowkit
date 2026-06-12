@@ -1,0 +1,17 @@
+{
+  "title": "Hello flowkit",
+  "nodes": [
+    { "id": "start", "col": 0, "row": 0, "shape": "terminal", "class": "primary", "label": "Start" },
+    { "id": "work", "col": 1, "row": 0, "label": "Do the thing" },
+    { "id": "ok", "col": 2, "row": 0, "shape": "decision", "label": "Worked?" },
+    { "id": "done", "col": 3, "row": 0, "shape": "terminal", "class": "success", "label": "Done" },
+    { "id": "retry", "col": 2, "row": 1, "class": "warning", "label": "Fix and retry" }
+  ],
+  "edges": [
+    { "from": "start", "to": "work" },
+    { "from": "work", "to": "ok" },
+    { "from": "ok", "to": "done", "label": "yes" },
+    { "from": "ok", "to": "retry", "label": "no" },
+    { "from": "retry", "to": "work", "style": "dashed", "label": "fixed" }
+  ]
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1232" height="350" viewBox="0 0 1232 350"><rect x="0" y="0" width="1232" height="350" fill="#0f172a"/>
+<text x="36" y="50" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="19" font-weight="700" fill="#f1f5f9">Hello flowkit</text>
+<defs><marker id="arr-94a3b8" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#94a3b8"/></marker></defs>
+<path d="M 281 140 L 371 140" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 571 132.8 L 612.9 132.8 Q 616 132.8 616 135.9 L 616 136.9 Q 616 140 619.1 140 L 661 140" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 861 140 L 951 140" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 761 176 L 761 220" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 661 256 L 623 256 Q 616 256 616 249 L 616 154.2 Q 616 147.2 609 147.2 L 571 147.2" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr-94a3b8)"/>
+<rect x="81" y="104" width="200" height="72" rx="36" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="181" y="142.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0f2fe">Start</text>
+<rect x="371" y="104" width="200" height="72" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+<text x="471" y="142.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Do the thing</text>
+<polygon points="761,104 861,140 761,176 661,140" fill="#1e293b" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="761" y="142.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Worked?</text>
+<rect x="951" y="104" width="200" height="72" rx="36" fill="#052e2b" stroke="#10b981" stroke-width="1.5"/>
+<text x="1051" y="142.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#d1fae5">Done</text>
+<rect x="661" y="220" width="200" height="72" rx="6" fill="#3b2f00" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="761" y="258.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fef3c7">Fix and retry</text>
+<rect x="866.51618" y="130.25" width="32.96764" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="883" y="144.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">yes</text>
+<rect x="747.22236" y="188.25" width="27.555280000000003" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="761" y="202.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">no</text>
+<rect x="596.12736" y="191.85" width="39.74528" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="616" y="205.73999999999998" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">fixed</text></svg>
