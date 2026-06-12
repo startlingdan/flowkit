@@ -1,0 +1,32 @@
+{
+  "name": "flowkit",
+  "version": "0.1.0",
+  "description": "Deterministic grid-based flowchart renderer. JSON in, SVG/PNG out. Built for AI-driven authoring: explicit layout, predictable routing, numerical feedback loop.",
+  "type": "module",
+  "bin": {
+    "flowkit": "bin/flowkit.mjs"
+  },
+  "scripts": {
+    "samples": "node bin/flowkit.mjs render samples/*.json --out-dir out"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/startlingdan/flowkit.git"
+  },
+  "keywords": [
+    "flowchart",
+    "diagram",
+    "svg",
+    "png",
+    "deterministic",
+    "grid",
+    "orthogonal-routing",
+    "ai-authoring"
+  ],
+  "author": "Dan Akers",
+  "license": "MIT",
+  "devDependencies": {
+    "@hpcc-js/wasm-graphviz": "^1.22.0",
+    "puppeteer": "^24.0.0"
+  }
+}

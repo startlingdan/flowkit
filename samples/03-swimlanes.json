@@ -1,0 +1,34 @@
+{
+  "title": "Event publishing",
+  "subtitle": "flowkit sample 03 — swimlanes, light theme",
+  "theme": "light",
+  "grid": { "colWidth": 170, "colGap": 64, "rowHeight": 70, "rowGap": 46 },
+  "lanes": [
+    { "label": "Organiser", "rows": [0, 0] },
+    { "label": "Platform", "rows": [1, 2] },
+    { "label": "Attendee", "rows": [3, 3] }
+  ],
+  "nodes": [
+    { "id": "submit", "col": 0, "row": 0, "shape": "io", "class": "primary", "label": "Submit event form" },
+    { "id": "checks", "col": 1, "row": 1, "shape": "process", "label": "Auto-checks", "sublabel": "dates, venue, duplicates" },
+    { "id": "ok", "col": 2, "row": 1, "shape": "decision", "label": "Passes?" },
+    { "id": "manual", "col": 2, "row": 2, "shape": "process", "class": "warning", "label": "Manual review" },
+    { "id": "reject", "col": 1, "row": 2, "shape": "io", "class": "danger", "label": "Rejection email" },
+    { "id": "publish", "col": 3, "row": 1, "shape": "process", "class": "success", "label": "Publish listing" },
+    { "id": "notify", "col": 4, "row": 1, "shape": "process", "label": "Notify mailing list", "sublabel": "segment: local events" },
+    { "id": "book", "col": 5, "row": 3, "shape": "io", "label": "Book / RSVP" },
+    { "id": "confirm", "col": 6, "row": 3, "shape": "process", "class": "success", "label": "Confirmation", "sublabel": "email + calendar invite" }
+  ],
+  "edges": [
+    { "from": "submit", "to": "checks" },
+    { "from": "checks", "to": "ok" },
+    { "from": "ok", "to": "publish", "label": "yes" },
+    { "from": "ok", "to": "manual", "label": "no" },
+    { "from": "manual", "to": "publish", "label": "approved" },
+    { "from": "manual", "to": "reject", "label": "rejected" },
+    { "from": "reject", "to": "submit", "style": "dashed", "label": "fix & resubmit", "labelAt": "start" },
+    { "from": "publish", "to": "notify" },
+    { "from": "notify", "to": "book", "label": "email link" },
+    { "from": "book", "to": "confirm" }
+  ]
+}

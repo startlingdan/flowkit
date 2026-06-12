@@ -1,0 +1,36 @@
+{
+  "title": "Deploy to Railway",
+  "subtitle": "flowkit sample 04 — vertical (TB) flow + column lanes",
+  "theme": "dark",
+  "direction": "TB",
+  "grid": { "colWidth": 185, "rowHeight": 70, "colGap": 64, "rowGap": 56 },
+  "lanes": [
+    { "label": "Dev", "cols": [0, 0] },
+    { "label": "CI", "cols": [1, 1] },
+    { "label": "Railway", "cols": [2, 3] }
+  ],
+  "nodes": [
+    { "id": "push", "col": 0, "row": 0, "shape": "terminal", "class": "primary", "label": "git push" },
+    { "id": "tests", "col": 1, "row": 1, "shape": "process", "label": "Run tests", "sublabel": "unit + integration" },
+    { "id": "pass", "col": 1, "row": 2, "shape": "decision", "label": "Tests pass?" },
+    { "id": "fix", "col": 0, "row": 3, "shape": "process", "class": "warning", "label": "Fix and recommit" },
+    { "id": "deploy", "col": 2, "row": 3, "shape": "process", "class": "info", "label": "railway up", "sublabel": "image build + deploy" },
+    { "id": "verify", "col": 2, "row": 4, "shape": "process", "label": "Smoke check", "sublabel": "GET /health = 200?" },
+    { "id": "healthy", "col": 2, "row": 5, "shape": "decision", "label": "Healthy?" },
+    { "id": "live", "col": 2, "row": 6, "shape": "terminal", "class": "success", "label": "Live" },
+    { "id": "rollback", "col": 3, "row": 6, "shape": "process", "class": "danger", "label": "Rollback", "sublabel": "previous deployment" },
+    { "id": "alert", "col": 0, "row": 7, "shape": "io", "class": "warning", "label": "Notify on-call", "sublabel": "Slack + email" }
+  ],
+  "edges": [
+    { "from": "push", "to": "tests" },
+    { "from": "tests", "to": "pass" },
+    { "from": "pass", "to": "deploy", "label": "yes" },
+    { "from": "pass", "to": "fix", "exit": "west", "label": "no" },
+    { "from": "fix", "to": "push", "style": "dashed", "label": "retry" },
+    { "from": "deploy", "to": "verify" },
+    { "from": "verify", "to": "healthy" },
+    { "from": "healthy", "to": "live", "label": "yes" },
+    { "from": "healthy", "to": "rollback", "exit": "east", "label": "no" },
+    { "from": "rollback", "to": "alert", "label": "escalate" }
+  ]
+}

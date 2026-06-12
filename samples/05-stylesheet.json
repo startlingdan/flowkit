@@ -1,0 +1,44 @@
+{
+  "title": "flowkit style sheet",
+  "subtitle": "row 1: shapes · rows 2-3: colour classes · row 4: edge styles — render with --theme dark|light",
+  "theme": "dark",
+  "grid": { "colWidth": 150, "rowHeight": 64, "colGap": 56, "rowGap": 40 },
+  "legend": { "primary": "this is a legend", "success": "defined per chart", "muted": "class → label" },
+  "nodes": [
+    { "id": "sh1", "col": 0, "row": 0, "shape": "process", "label": "process" },
+    { "id": "sh2", "col": 1, "row": 0, "shape": "decision", "label": "decision" },
+    { "id": "sh3", "col": 2, "row": 0, "shape": "terminal", "label": "terminal" },
+    { "id": "sh4", "col": 3, "row": 0, "shape": "io", "label": "io" },
+    { "id": "sh5", "col": 4, "row": 0, "shape": "data", "label": "data" },
+    { "id": "sh6", "col": 5, "row": 0, "shape": "subroutine", "label": "subroutine" },
+    { "id": "sh7", "col": 6, "row": 0, "shape": "note", "label": "note" },
+
+    { "id": "c1", "col": 0, "row": 1, "label": "default", "sublabel": "slate" },
+    { "id": "c2", "col": 1, "row": 1, "class": "primary", "label": "primary", "sublabel": "blue" },
+    { "id": "c3", "col": 2, "row": 1, "class": "success", "label": "success", "sublabel": "green" },
+    { "id": "c4", "col": 3, "row": 1, "class": "danger", "label": "danger", "sublabel": "red" },
+    { "id": "c5", "col": 4, "row": 1, "class": "warning", "label": "warning", "sublabel": "amber" },
+    { "id": "c6", "col": 5, "row": 1, "class": "info", "label": "info", "sublabel": "indigo" },
+    { "id": "c7", "col": 6, "row": 1, "class": "accent", "label": "accent", "sublabel": "purple" },
+    { "id": "c8", "col": 0, "row": 2, "class": "pink", "label": "pink", "sublabel": "magenta" },
+    { "id": "c9", "col": 1, "row": 2, "class": "muted", "label": "muted", "sublabel": "grey" },
+    { "id": "c10", "col": 3, "row": 2, "class": "custom", "label": "custom class", "sublabel": "defined in \"classes\"" },
+
+    { "id": "e1", "col": 0, "row": 3, "class": "muted", "label": "A" },
+    { "id": "e2", "col": 1, "row": 3, "class": "muted", "label": "B" },
+    { "id": "e3", "col": 2, "row": 3, "class": "muted", "label": "C" },
+    { "id": "e4", "col": 3, "row": 3, "class": "muted", "label": "D" },
+    { "id": "e5", "col": 4, "row": 3, "class": "muted", "label": "E" },
+    { "id": "e6", "col": 6, "row": 3, "class": "muted", "label": "F" }
+  ],
+  "classes": {
+    "custom": { "fill": "#1a3a4a", "stroke": "#2dd4bf", "text": "#ccfbf1" }
+  },
+  "edges": [
+    { "from": "e1", "to": "e2", "label": "solid" },
+    { "from": "e2", "to": "e3", "style": "dashed", "label": "dashed" },
+    { "from": "e3", "to": "e4", "style": "dotted", "label": "dotted" },
+    { "from": "e4", "to": "e5", "class": "danger", "label": "class: danger" },
+    { "from": "e5", "to": "e6", "class": "custom", "label": "class: custom" }
+  ]
+}

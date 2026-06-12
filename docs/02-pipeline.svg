@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2079" height="510" viewBox="0 0 2079 510"><rect x="0" y="0" width="2079" height="510" fill="#0f172a"/>
+<text x="36" y="50" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="19" font-weight="700" fill="#f1f5f9">Pipeline: order_performance</text>
+<text x="36" y="70" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="12.5" fill="#94a3b8">warehouse step DAG — flowkit sample 02</text>
+<defs><marker id="arr-94a3b8" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#94a3b8"/></marker></defs>
+<path d="M 230 155 L 288 155" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 230 265 L 288 265" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 230 375 L 288 375" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 453 155 L 479.1 155 Q 482 155 482 152.1 L 482 151.1 Q 482 148.2 484.9 148.2 L 511 148.2" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 453 265 L 475 265 Q 482 265 482 258 L 482 168.8 Q 482 161.8 489 161.8 L 511 161.8" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 453 375 L 511 375" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 676 155 L 698 155 Q 705 155 705 162 L 705 251.2 Q 705 258.2 712 258.2 L 734 258.2" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 676 375 L 698 375 Q 705 375 705 368 L 705 278.8 Q 705 271.8 712 271.8 L 734 271.8" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 899 265 L 957 265" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 1122 265 L 1180 265" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 1345 265 L 1403 265" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 1568 265 L 1626 265" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 1791 265 L 1849 265" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<rect x="65" y="121" width="165" height="68" rx="34" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="147.5" y="151.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0f2fe">source: orders</text>
+<text x="147.5" y="169.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e0f2fe" fill-opacity="0.7">order headers</text>
+<rect x="65" y="231" width="165" height="68" rx="34" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="147.5" y="252.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0f2fe">source:</text>
+<text x="147.5" y="269.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0f2fe">payments</text>
+<text x="147.5" y="287.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e0f2fe" fill-opacity="0.7">charges + refunds</text>
+<rect x="65" y="341" width="165" height="68" rx="34" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="147.5" y="377.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0f2fe">source: lines</text>
+<rect x="288" y="121" width="165" height="68" rx="6" fill="#172554" stroke="#818cf8" stroke-width="1.5"/>
+<text x="370.5" y="151.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0e7ff">normalise</text>
+<text x="370.5" y="169.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e0e7ff" fill-opacity="0.7">trim, types, currency</text>
+<rect x="288" y="231" width="165" height="68" rx="6" fill="#3a1e3a" stroke="#c084fc" stroke-width="1.5"/>
+<text x="370.5" y="261.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#f3e8ff">poly-latest</text>
+<text x="370.5" y="279.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#f3e8ff" fill-opacity="0.7">latest charge per order</text>
+<rect x="288" y="341" width="165" height="68" rx="6" fill="#111827" stroke="#4b5563" stroke-width="1.5"/>
+<text x="370.5" y="371.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#9ca3af">dedupe</text>
+<text x="370.5" y="389.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#9ca3af" fill-opacity="0.7">by line_id</text>
+<rect x="511" y="121" width="165" height="68" rx="4" fill="#172554" stroke="#818cf8" stroke-width="1.5"/><line x1="520" y1="121" x2="520" y2="189" stroke="#818cf8" stroke-width="1.5"/><line x1="667" y1="121" x2="667" y2="189" stroke="#818cf8" stroke-width="1.5"/>
+<text x="593.5" y="151.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0e7ff">join</text>
+<text x="593.5" y="169.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e0e7ff" fill-opacity="0.7">orders × payments</text>
+<rect x="511" y="341" width="165" height="68" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+<text x="593.5" y="371.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">lookup</text>
+<text x="593.5" y="389.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e2e8f0" fill-opacity="0.7">category map (CSV)</text>
+<rect x="734" y="231" width="165" height="68" rx="4" fill="#172554" stroke="#818cf8" stroke-width="1.5"/><line x1="743" y1="231" x2="743" y2="299" stroke="#818cf8" stroke-width="1.5"/><line x1="890" y1="231" x2="890" y2="299" stroke="#818cf8" stroke-width="1.5"/>
+<text x="816.5" y="261.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0e7ff">join</text>
+<text x="816.5" y="279.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e0e7ff" fill-opacity="0.7">+ line details</text>
+<rect x="957" y="231" width="165" height="68" rx="6" fill="#3b2f00" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="1039.5" y="261.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fef3c7">derive</text>
+<text x="1039.5" y="279.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fef3c7" fill-opacity="0.7">margin, fees, basket size</text>
+<rect x="1180" y="231" width="165" height="68" rx="6" fill="#3b0a2a" stroke="#ec4899" stroke-width="1.5"/>
+<text x="1262.5" y="261.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fce7f3">filter</text>
+<text x="1262.5" y="279.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fce7f3" fill-opacity="0.7">exclude cancelled</text>
+<rect x="1403" y="231" width="165" height="68" rx="6" fill="#3b0a0a" stroke="#ef4444" stroke-width="1.5"/>
+<text x="1485.5" y="261.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fee2e2">validate</text>
+<text x="1485.5" y="279.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fee2e2" fill-opacity="0.7">non-null, ranges</text>
+<rect x="1626" y="231" width="165" height="68" rx="6" fill="#052e2b" stroke="#10b981" stroke-width="1.5"/>
+<text x="1708.5" y="261.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#d1fae5">aggregate</text>
+<text x="1708.5" y="279.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#d1fae5" fill-opacity="0.7">by category × month</text>
+<path d="M 1849 241 A 82.5 10 0 0 1 2014 241 L 2014 289 A 82.5 10 0 0 1 1849 289 Z" fill="#052e2b" stroke="#10b981" stroke-width="1.5"/><path d="M 1849 241 A 82.5 10 0 0 0 2014 241" fill="none" stroke="#10b981" stroke-width="1.5"/>
+<text x="1931.5" y="266.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#d1fae5">cube: order_perf</text>
+<text x="1931.5" y="284.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#d1fae5" fill-opacity="0.7">materialised</text>
+<rect x="36" y="456" width="14" height="14" rx="4" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.4"/>
+<text x="56" y="467" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">source read</text>
+<rect x="138.72" y="456" width="14" height="14" rx="4" fill="#172554" stroke="#818cf8" stroke-width="1.4"/>
+<text x="158.72" y="467" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">join</text>
+<rect x="198.614" y="456" width="14" height="14" rx="4" fill="#3a1e3a" stroke="#c084fc" stroke-width="1.4"/>
+<text x="218.614" y="467" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">poly-latest</text>
+<rect x="293.0195" y="456" width="14" height="14" rx="4" fill="#111827" stroke="#4b5563" stroke-width="1.4"/>
+<text x="313.0195" y="467" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">dedupe</text>
+<rect x="373.38349999999997" y="456" width="14" height="14" rx="4" fill="#1e293b" stroke="#64748b" stroke-width="1.4"/>
+<text x="393.38349999999997" y="467" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">lookup</text>
+<rect x="449.2625" y="456" width="14" height="14" rx="4" fill="#3b2f00" stroke="#f59e0b" stroke-width="1.4"/>
+<text x="469.2625" y="467" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">derive</text>
+<rect x="522.577" y="456" width="14" height="14" rx="4" fill="#3b0a2a" stroke="#ec4899" stroke-width="1.4"/>
+<text x="542.577" y="467" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">filter</text>
+<rect x="586.3005" y="456" width="14" height="14" rx="4" fill="#3b0a0a" stroke="#ef4444" stroke-width="1.4"/>
+<text x="606.3005" y="467" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">validate</text>
+<rect x="667.9295000000001" y="456" width="14" height="14" rx="4" fill="#052e2b" stroke="#10b981" stroke-width="1.4"/>
+<text x="687.9295000000001" y="467" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">aggregate / output</text></svg>

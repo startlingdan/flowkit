@@ -1,0 +1,48 @@
+{
+  "title": "Pipeline: order_performance",
+  "subtitle": "warehouse step DAG — flowkit sample 02",
+  "theme": "dark",
+  "grid": { "colWidth": 165, "colGap": 58, "rowHeight": 68, "rowGap": 42 },
+  "legend": {
+    "primary": "source read",
+    "info": "join",
+    "accent": "poly-latest",
+    "muted": "dedupe",
+    "default": "lookup",
+    "warning": "derive",
+    "pink": "filter",
+    "danger": "validate",
+    "success": "aggregate / output"
+  },
+  "nodes": [
+    { "id": "src_orders", "col": 0, "row": 0, "shape": "terminal", "class": "primary", "label": "source: orders", "sublabel": "order headers" },
+    { "id": "src_payments", "col": 0, "row": 1, "shape": "terminal", "class": "primary", "label": "source: payments", "sublabel": "charges + refunds" },
+    { "id": "src_lines", "col": 0, "row": 2, "shape": "terminal", "class": "primary", "label": "source: lines" },
+    { "id": "norm_orders", "col": 1, "row": 0, "shape": "process", "class": "info", "label": "normalise", "sublabel": "trim, types, currency" },
+    { "id": "poly_payments", "col": 1, "row": 1, "shape": "process", "class": "accent", "label": "poly-latest", "sublabel": "latest charge per order" },
+    { "id": "dedupe_lines", "col": 1, "row": 2, "shape": "process", "class": "muted", "label": "dedupe", "sublabel": "by line_id" },
+    { "id": "join_payments", "col": 2, "row": 0, "shape": "subroutine", "class": "info", "label": "join", "sublabel": "orders × payments" },
+    { "id": "lookup_cat", "col": 2, "row": 2, "shape": "process", "label": "lookup", "sublabel": "category map (CSV)" },
+    { "id": "join_lines", "col": 3, "row": 1, "shape": "subroutine", "class": "info", "label": "join", "sublabel": "+ line details" },
+    { "id": "derive", "col": 4, "row": 1, "shape": "process", "class": "warning", "label": "derive", "sublabel": "margin, fees, basket size" },
+    { "id": "filter", "col": 5, "row": 1, "shape": "process", "class": "pink", "label": "filter", "sublabel": "exclude cancelled" },
+    { "id": "validate", "col": 6, "row": 1, "shape": "process", "class": "danger", "label": "validate", "sublabel": "non-null, ranges" },
+    { "id": "aggregate", "col": 7, "row": 1, "shape": "process", "class": "success", "label": "aggregate", "sublabel": "by category × month" },
+    { "id": "cube", "col": 8, "row": 1, "shape": "data", "class": "success", "label": "cube: order_perf", "sublabel": "materialised" }
+  ],
+  "edges": [
+    { "from": "src_orders", "to": "norm_orders" },
+    { "from": "src_payments", "to": "poly_payments" },
+    { "from": "src_lines", "to": "dedupe_lines" },
+    { "from": "norm_orders", "to": "join_payments" },
+    { "from": "poly_payments", "to": "join_payments" },
+    { "from": "dedupe_lines", "to": "lookup_cat" },
+    { "from": "join_payments", "to": "join_lines" },
+    { "from": "lookup_cat", "to": "join_lines" },
+    { "from": "join_lines", "to": "derive" },
+    { "from": "derive", "to": "filter" },
+    { "from": "filter", "to": "validate" },
+    { "from": "validate", "to": "aggregate" },
+    { "from": "aggregate", "to": "cube" }
+  ]
+}

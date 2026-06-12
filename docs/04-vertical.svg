@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1068" height="1174" viewBox="0 0 1068 1174"><rect x="0" y="0" width="1068" height="1174" fill="#0f172a"/>
+<rect x="36" y="100" width="249" height="1038" fill="rgba(148,163,184,0.06)" stroke="rgba(148,163,184,0.15)" stroke-width="1"/>
+<text x="160.5" y="119" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#64748b">DEV</text>
+<rect x="285" y="100" width="249" height="1038" fill="rgba(148,163,184,0.02)" stroke="rgba(148,163,184,0.15)" stroke-width="1"/>
+<text x="409.5" y="119" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#64748b">CI</text>
+<rect x="534" y="100" width="498" height="1038" fill="rgba(148,163,184,0.06)" stroke="rgba(148,163,184,0.15)" stroke-width="1"/>
+<text x="783" y="119" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#64748b">RAILWAY</text>
+<text x="36" y="50" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="19" font-weight="700" fill="#f1f5f9">Deploy to Railway</text>
+<text x="36" y="70" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="12.5" fill="#94a3b8">flowkit sample 04 — vertical (TB) flow + column lanes</text>
+<defs><marker id="arr-94a3b8" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#94a3b8"/></marker></defs>
+<path d="M 179 228 L 179 249 Q 179 256 186 256 L 402.5 256 Q 409.5 256 409.5 263 L 409.5 284" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 409.5 354 L 409.5 410" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 409.5 480 L 409.5 501 Q 409.5 508 416.5 508 L 651.5 508 Q 658.5 508 658.5 515 L 658.5 536" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 317 445 L 292 445 Q 285 445 285 452 L 285 501 Q 285 508 278 508 L 186 508 Q 179 508 179 515 L 179 536" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 142 536 L 142 228" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr-94a3b8)"/>
+<path d="M 658.5 606 L 658.5 662" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 658.5 732 L 658.5 788" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 658.5 858 L 658.5 914" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 751 823 L 776 823 Q 783 823 783 830 L 783 879 Q 783 886 790 886 L 900.5 886 Q 907.5 886 907.5 893 L 907.5 914" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 907.5 984 L 907.5 1005 Q 907.5 1012 900.5 1012 L 167.5 1012 Q 160.5 1012 160.5 1019 L 160.5 1040" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<rect x="68" y="158" width="185" height="70" rx="35" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="160.5" y="195.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0f2fe">git push</text>
+<rect x="317" y="284" width="185" height="70" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+<text x="409.5" y="315.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Run tests</text>
+<text x="409.5" y="333.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e2e8f0" fill-opacity="0.7">unit + integration</text>
+<polygon points="409.5,410 502,445 409.5,480 317,445" fill="#1e293b" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="409.5" y="447.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Tests pass?</text>
+<rect x="68" y="536" width="185" height="70" rx="6" fill="#3b2f00" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="160.5" y="573.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fef3c7">Fix and recommit</text>
+<rect x="566" y="536" width="185" height="70" rx="6" fill="#172554" stroke="#818cf8" stroke-width="1.5"/>
+<text x="658.5" y="567.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0e7ff">railway up</text>
+<text x="658.5" y="585.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e0e7ff" fill-opacity="0.7">image build + deploy</text>
+<rect x="566" y="662" width="185" height="70" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+<text x="658.5" y="693.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Smoke check</text>
+<text x="658.5" y="711.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e2e8f0" fill-opacity="0.7">GET /health = 200?</text>
+<polygon points="658.5,788 751,823 658.5,858 566,823" fill="#1e293b" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="658.5" y="825.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Healthy?</text>
+<rect x="566" y="914" width="185" height="70" rx="35" fill="#052e2b" stroke="#10b981" stroke-width="1.5"/>
+<text x="658.5" y="951.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#d1fae5">Live</text>
+<rect x="815" y="914" width="185" height="70" rx="6" fill="#3b0a0a" stroke="#ef4444" stroke-width="1.5"/>
+<text x="907.5" y="945.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fee2e2">Rollback</text>
+<text x="907.5" y="963.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fee2e2" fill-opacity="0.7">previous deployment</text>
+<polygon points="86,1040 253,1040 235,1110 68,1110" fill="#3b2f00" stroke="#f59e0b" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="160.5" y="1071.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fef3c7">Notify on-call</text>
+<text x="160.5" y="1089.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fef3c7" fill-opacity="0.7">Slack + email</text>
+<rect x="393.01618" y="492.25" width="32.96764" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="409.5" y="506.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">yes</text>
+<rect x="281.22236" y="435.25" width="27.555280000000003" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="295" y="449.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">no</text>
+<rect x="122.81" y="372.25" width="38.38" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="142" y="386.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">retry</text>
+<rect x="642.01618" y="870.25" width="32.96764" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="658.5" y="884.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">yes</text>
+<rect x="759.22236" y="813.25" width="27.555280000000003" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="773" y="827.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">no</text>
+<rect x="504.30222" y="1002.25" width="59.39556" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="534" y="1016.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">escalate</text></svg>

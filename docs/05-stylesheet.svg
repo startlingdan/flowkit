@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1514" height="596" viewBox="0 0 1514 596"><rect x="0" y="0" width="1514" height="596" fill="#0f172a"/>
+<text x="36" y="50" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="19" font-weight="700" fill="#f1f5f9">flowkit style sheet</text>
+<text x="36" y="70" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="12.5" fill="#94a3b8">row 1: shapes · rows 2-3: colour classes · row 4: edge styles — render with --theme dark|light</text>
+<defs><marker id="arr-2dd4bf" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#2dd4bf"/></marker><marker id="arr-94a3b8" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#94a3b8"/></marker><marker id="arr-ef4444" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#ef4444"/></marker></defs>
+<path d="M 214 464 L 270 464" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 420 464 L 476 464" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr-94a3b8)"/>
+<path d="M 626 464 L 682 464" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="2 4" stroke-linecap="round" marker-end="url(#arr-94a3b8)"/>
+<path d="M 832 464 L 888 464" fill="none" stroke="#ef4444" stroke-width="1.6" marker-end="url(#arr-ef4444)"/>
+<path d="M 1038 464 L 1300 464" fill="none" stroke="#2dd4bf" stroke-width="1.6" marker-end="url(#arr-2dd4bf)"/>
+<rect x="64" y="120" width="150" height="64" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+<text x="139" y="154.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">process</text>
+<polygon points="345,120 420,152 345,184 270,152" fill="#1e293b" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="345" y="154.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">decision</text>
+<rect x="476" y="120" width="150" height="64" rx="32" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+<text x="551" y="154.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">terminal</text>
+<polygon points="700,120 832,120 814,184 682,184" fill="#1e293b" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="757" y="154.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">io</text>
+<path d="M 888 130 A 75 10 0 0 1 1038 130 L 1038 174 A 75 10 0 0 1 888 174 Z" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/><path d="M 888 130 A 75 10 0 0 0 1038 130" fill="none" stroke="#64748b" stroke-width="1.5"/>
+<text x="963" y="159.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">data</text>
+<rect x="1094" y="120" width="150" height="64" rx="4" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/><line x1="1103" y1="120" x2="1103" y2="184" stroke="#64748b" stroke-width="1.5"/><line x1="1235" y1="120" x2="1235" y2="184" stroke="#64748b" stroke-width="1.5"/>
+<text x="1169" y="154.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">subroutine</text>
+<path d="M 1300 120 L 1438 120 L 1450 132 L 1450 184 L 1300 184 Z" fill="#1e293b" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round"/><path d="M 1438 120 L 1438 132 L 1450 132" fill="none" stroke="#64748b" stroke-width="1.2"/>
+<text x="1375" y="154.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">note</text>
+<rect x="64" y="224" width="150" height="64" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+<text x="139" y="252.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">default</text>
+<text x="139" y="270.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e2e8f0" fill-opacity="0.7">slate</text>
+<rect x="270" y="224" width="150" height="64" rx="6" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="345" y="252.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0f2fe">primary</text>
+<text x="345" y="270.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e0f2fe" fill-opacity="0.7">blue</text>
+<rect x="476" y="224" width="150" height="64" rx="6" fill="#052e2b" stroke="#10b981" stroke-width="1.5"/>
+<text x="551" y="252.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#d1fae5">success</text>
+<text x="551" y="270.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#d1fae5" fill-opacity="0.7">green</text>
+<rect x="682" y="224" width="150" height="64" rx="6" fill="#3b0a0a" stroke="#ef4444" stroke-width="1.5"/>
+<text x="757" y="252.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fee2e2">danger</text>
+<text x="757" y="270.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fee2e2" fill-opacity="0.7">red</text>
+<rect x="888" y="224" width="150" height="64" rx="6" fill="#3b2f00" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="963" y="252.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fef3c7">warning</text>
+<text x="963" y="270.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fef3c7" fill-opacity="0.7">amber</text>
+<rect x="1094" y="224" width="150" height="64" rx="6" fill="#172554" stroke="#818cf8" stroke-width="1.5"/>
+<text x="1169" y="252.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0e7ff">info</text>
+<text x="1169" y="270.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#e0e7ff" fill-opacity="0.7">indigo</text>
+<rect x="1300" y="224" width="150" height="64" rx="6" fill="#3a1e3a" stroke="#c084fc" stroke-width="1.5"/>
+<text x="1375" y="252.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#f3e8ff">accent</text>
+<text x="1375" y="270.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#f3e8ff" fill-opacity="0.7">purple</text>
+<rect x="64" y="328" width="150" height="64" rx="6" fill="#3b0a2a" stroke="#ec4899" stroke-width="1.5"/>
+<text x="139" y="356.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fce7f3">pink</text>
+<text x="139" y="374.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fce7f3" fill-opacity="0.7">magenta</text>
+<rect x="270" y="328" width="150" height="64" rx="6" fill="#111827" stroke="#4b5563" stroke-width="1.5"/>
+<text x="345" y="356.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#9ca3af">muted</text>
+<text x="345" y="374.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#9ca3af" fill-opacity="0.7">grey</text>
+<rect x="682" y="328" width="150" height="64" rx="6" fill="#1a3a4a" stroke="#2dd4bf" stroke-width="1.5"/>
+<text x="757" y="356.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#ccfbf1">custom class</text>
+<text x="757" y="374.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#ccfbf1" fill-opacity="0.7">defined in &quot;classes&quot;</text>
+<rect x="64" y="432" width="150" height="64" rx="6" fill="#111827" stroke="#4b5563" stroke-width="1.5"/>
+<text x="139" y="466.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#9ca3af">A</text>
+<rect x="270" y="432" width="150" height="64" rx="6" fill="#111827" stroke="#4b5563" stroke-width="1.5"/>
+<text x="345" y="466.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#9ca3af">B</text>
+<rect x="476" y="432" width="150" height="64" rx="6" fill="#111827" stroke="#4b5563" stroke-width="1.5"/>
+<text x="551" y="466.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#9ca3af">C</text>
+<rect x="682" y="432" width="150" height="64" rx="6" fill="#111827" stroke="#4b5563" stroke-width="1.5"/>
+<text x="757" y="466.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#9ca3af">D</text>
+<rect x="888" y="432" width="150" height="64" rx="6" fill="#111827" stroke="#4b5563" stroke-width="1.5"/>
+<text x="963" y="466.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#9ca3af">E</text>
+<rect x="1300" y="432" width="150" height="64" rx="6" fill="#111827" stroke="#4b5563" stroke-width="1.5"/>
+<text x="1375" y="466.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#9ca3af">F</text>
+<rect x="222.46868" y="454.25" width="39.06264" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="242" y="468.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">solid</text>
+<rect x="421.0084" y="454.25" width="53.983200000000004" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="448" y="468.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">dashed</text>
+<rect x="630.0559" y="454.25" width="47.8882" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="654" y="468.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">dotted</text>
+<rect x="816.753035" y="454.25" width="86.49393" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#ef4444" stroke-opacity="0.35" stroke-width="1"/><text x="860" y="468.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#ef4444">class: danger</text>
+<rect x="1125.082585" y="454.25" width="87.83483000000001" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#2dd4bf" stroke-opacity="0.35" stroke-width="1"/><text x="1169" y="468.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#2dd4bf">class: custom</text>
+<rect x="36" y="542" width="14" height="14" rx="4" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.4"/>
+<text x="56" y="553" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">this is a legend</text>
+<rect x="154.70499999999998" y="542" width="14" height="14" rx="4" fill="#052e2b" stroke="#10b981" stroke-width="1.4"/>
+<text x="174.70499999999998" y="553" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">defined per chart</text>
+<rect x="283.001" y="542" width="14" height="14" rx="4" fill="#111827" stroke="#4b5563" stroke-width="1.4"/>
+<text x="303.001" y="553" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" fill="#94a3b8">class → label</text></svg>

@@ -1,0 +1,36 @@
+{
+  "title": "Order processing",
+  "subtitle": "flowkit sample 01 — decisions, loop-backs, shapes",
+  "theme": "dark",
+  "grid": { "colWidth": 175, "colGap": 70, "rowHeight": 72, "rowGap": 48 },
+  "nodes": [
+    { "id": "start", "col": 0, "row": 0, "shape": "terminal", "class": "primary", "label": "Order received" },
+    { "id": "check", "col": 1, "row": 0, "shape": "decision", "label": "Details valid?" },
+    { "id": "fix", "col": 1, "row": 1, "shape": "io", "class": "warning", "label": "Request correction", "sublabel": "email customer" },
+    { "id": "stock", "col": 2, "row": 0, "shape": "decision", "label": "In stock?" },
+    { "id": "backorder", "col": 2, "row": 1, "shape": "process", "class": "warning", "label": "Create back-order" },
+    { "id": "hold", "col": 3, "row": 1, "shape": "data", "class": "muted", "label": "Hold queue" },
+    { "id": "payment", "col": 3, "row": 0, "shape": "process", "label": "Take payment" },
+    { "id": "paid", "col": 4, "row": 0, "shape": "decision", "label": "Payment OK?" },
+    { "id": "retry", "col": 4, "row": 1, "shape": "process", "class": "danger", "label": "Retry payment", "sublabel": "max 3 attempts" },
+    { "id": "cancel", "col": 5, "row": 1, "shape": "terminal", "class": "danger", "label": "Cancel order", "sublabel": "refund if charged" },
+    { "id": "dispatch", "col": 5, "row": 0, "shape": "process", "class": "success", "label": "Dispatch order", "sublabel": "courier + tracking" },
+    { "id": "done", "col": 6, "row": 0, "shape": "terminal", "class": "success", "label": "Complete" }
+  ],
+  "edges": [
+    { "from": "start", "to": "check" },
+    { "from": "check", "to": "stock", "label": "yes" },
+    { "from": "check", "to": "fix", "label": "no" },
+    { "from": "fix", "to": "check", "exit": "west", "enter": "west", "label": "resubmit" },
+    { "from": "stock", "to": "payment", "label": "yes" },
+    { "from": "stock", "to": "backorder", "label": "no" },
+    { "from": "backorder", "to": "hold" },
+    { "from": "hold", "to": "stock", "enter": "north", "style": "dashed", "label": "stock arrives", "labelAt": "end" },
+    { "from": "payment", "to": "paid" },
+    { "from": "paid", "to": "dispatch", "label": "yes" },
+    { "from": "paid", "to": "retry", "label": "no" },
+    { "from": "retry", "to": "payment", "exit": "west", "enter": "east", "label": "retry" },
+    { "from": "retry", "to": "cancel", "label": "exhausted" },
+    { "from": "dispatch", "to": "done" }
+  ]
+}

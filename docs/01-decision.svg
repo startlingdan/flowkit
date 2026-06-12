@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1787" height="376" viewBox="0 0 1787 376"><rect x="0" y="0" width="1787" height="376" fill="#0f172a"/>
+<text x="36" y="50" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="19" font-weight="700" fill="#f1f5f9">Order processing</text>
+<text x="36" y="70" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="12.5" fill="#94a3b8">flowkit sample 01 — decisions, loop-backs, shapes</text>
+<defs><marker id="arr-94a3b8" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse"><path d="M 0 1 L 9 5 L 0 9 z" fill="#94a3b8"/></marker></defs>
+<path d="M 246 160 L 316 160" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 491 160 L 561 160" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 403.5 196 L 403.5 244" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 316 280 L 288 280 Q 281 280 281 273 L 281 167 Q 281 160 288 160 L 316 160" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 736 160 L 806 160" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 648.5 196 L 648.5 244" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 736 280 L 767.9 280 Q 771 280 771 283.1 L 771 284.1 Q 771 287.2 774.1 287.2 L 806 287.2" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 806 272.8 L 778 272.8 Q 771 272.8 771 265.8 L 771 107 Q 771 100 764 100 L 655.5 100 Q 648.5 100 648.5 107 L 648.5 124" fill="none" stroke="#94a3b8" stroke-width="1.6" stroke-dasharray="7 5" marker-end="url(#arr-94a3b8)"/>
+<path d="M 981 152.8 L 1012.9 152.8 Q 1016 152.8 1016 155.9 L 1016 156.9 Q 1016 160 1019.1 160 L 1051 160" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 1226 160 L 1296 160" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 1138.5 196 L 1138.5 244" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 1051 280 L 1023 280 Q 1016 280 1016 273 L 1016 174.2 Q 1016 167.2 1009 167.2 L 981 167.2" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 1226 280 L 1296 280" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<path d="M 1471 160 L 1541 160" fill="none" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr-94a3b8)"/>
+<rect x="71" y="124" width="175" height="72" rx="36" fill="#0c4a6e" stroke="#38bdf8" stroke-width="1.5"/>
+<text x="158.5" y="162.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e0f2fe">Order received</text>
+<polygon points="403.5,124 491,160 403.5,196 316,160" fill="#1e293b" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="403.5" y="162.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Details valid?</text>
+<polygon points="334,244 491,244 473,316 316,316" fill="#3b2f00" stroke="#f59e0b" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="403.5" y="276.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fef3c7">Request correction</text>
+<text x="403.5" y="294.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fef3c7" fill-opacity="0.7">email customer</text>
+<polygon points="648.5,124 736,160 648.5,196 561,160" fill="#1e293b" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="648.5" y="162.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">In stock?</text>
+<rect x="561" y="244" width="175" height="72" rx="6" fill="#3b2f00" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="648.5" y="282.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fef3c7">Create back-order</text>
+<path d="M 806 254 A 87.5 10 0 0 1 981 254 L 981 306 A 87.5 10 0 0 1 806 306 Z" fill="#111827" stroke="#4b5563" stroke-width="1.5"/><path d="M 806 254 A 87.5 10 0 0 0 981 254" fill="none" stroke="#4b5563" stroke-width="1.5"/>
+<text x="893.5" y="287.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#9ca3af">Hold queue</text>
+<rect x="806" y="124" width="175" height="72" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+<text x="893.5" y="162.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Take payment</text>
+<polygon points="1138.5,124 1226,160 1138.5,196 1051,160" fill="#1e293b" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round"/>
+<text x="1138.5" y="162.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#e2e8f0">Payment OK?</text>
+<rect x="1051" y="244" width="175" height="72" rx="6" fill="#3b0a0a" stroke="#ef4444" stroke-width="1.5"/>
+<text x="1138.5" y="276.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fee2e2">Retry payment</text>
+<text x="1138.5" y="294.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fee2e2" fill-opacity="0.7">max 3 attempts</text>
+<rect x="1296" y="244" width="175" height="72" rx="36" fill="#3b0a0a" stroke="#ef4444" stroke-width="1.5"/>
+<text x="1383.5" y="276.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#fee2e2">Cancel order</text>
+<text x="1383.5" y="294.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#fee2e2" fill-opacity="0.7">refund if charged</text>
+<rect x="1296" y="124" width="175" height="72" rx="6" fill="#052e2b" stroke="#10b981" stroke-width="1.5"/>
+<text x="1383.5" y="156.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#d1fae5">Dispatch order</text>
+<text x="1383.5" y="174.05" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="10.5" fill="#d1fae5" fill-opacity="0.7">courier + tracking</text>
+<rect x="1541" y="124" width="175" height="72" rx="36" fill="#052e2b" stroke="#10b981" stroke-width="1.5"/>
+<text x="1628.5" y="162.55" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="13" font-weight="600" fill="#d1fae5">Complete</text>
+<rect x="496.51618" y="150.25" width="32.96764" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="513" y="164.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">yes</text>
+<rect x="389.72236" y="208.25" width="27.555280000000003" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="403.5" y="222.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">no</text>
+<rect x="250.63177" y="210.25" width="60.73646" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="281" y="224.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">resubmit</text>
+<rect x="741.51618" y="150.25" width="32.96764" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="758" y="164.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">yes</text>
+<rect x="634.72236" y="208.25" width="27.555280000000003" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="648.5" y="222.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">no</text>
+<rect x="609.29486" y="90.25" width="82.41028" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="650.5" y="104.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">stock arrives</text>
+<rect x="1231.51618" y="150.25" width="32.96764" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="1248" y="164.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">yes</text>
+<rect x="1124.72236" y="208.25" width="27.555280000000003" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="1138.5" y="222.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">no</text>
+<rect x="996.81" y="213.85" width="38.38" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="1016" y="227.73999999999998" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">retry</text>
+<rect x="1225.87767" y="270.25" width="70.24466000000001" height="19.5" rx="9.75" fill="#0f172a" fill-opacity="0.95" stroke="#94a3b8" stroke-opacity="0.35" stroke-width="1"/><text x="1261" y="284.14" text-anchor="middle" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-size="11.5" font-weight="700" fill="#cbd5e1">exhausted</text></svg>
